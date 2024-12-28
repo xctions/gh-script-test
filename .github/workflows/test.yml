@@ -19,7 +19,6 @@ jobs:
           script: |
             core.setOutput('a', 'a-value');
             core.setOutput('b', 'b-value');
-            # core.setOutput('success', exitCode === 0);
 
       - name: Print outputs
         run: |
