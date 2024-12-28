@@ -15,6 +15,7 @@ jobs:
         id: run
         uses: actions/github-script@v7
         with:
+          github-token: ${{ github.token }}
           script: |
             core.setOutput('a', 'a-value');
             core.setOutput('b', 'b-value');
